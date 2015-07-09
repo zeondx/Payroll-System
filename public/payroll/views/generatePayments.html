@@ -1,0 +1,22 @@
+<div ng-controller="empGenPayCtrl">
+	<div id="searchBar" class="input-group">
+		<span class="input-group-btn">
+			<button ng-click="findUser(employee)" class="btn btn-default">
+				<span class="ti-search"/>
+			</button>
+		</span>
+		<input class="form-control" type="text" placeholder="Search for employee by id" ng-model="employee" required></input>
+	</div>
+	<div ng-repeat="employee in empPaid track by $index">
+		<div class="container-fluid">
+			<div class="panel panel-default-row">
+				<div id="panel" class="panel-body">
+					<label>Employee id: {{employee.empId}}</label>
+					<label>Employee total paid: {{employee.totalPaid}}</label>
+					<button id='myBtn' class="btn btn-default btn-lg" ng-click="payEmp(empPaid[$index])"
+					role="button">Pay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

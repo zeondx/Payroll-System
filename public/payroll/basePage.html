@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="basePage">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/myCss.css">
+		<link rel="stylesheet" href="styles/themify-icons.css">
+	</head>
+	<body ng-controller="empPayCtrl">
+		<nav id="myNav" class="nav navbar-default" role="navigation">
+			<ul class="nav navbar-nav">
+				<li>
+					<a id="icons" class="btn btn-default btn-lg" href="#/genPay" role="button">
+						<span class = "glyphicon glyphicon-credit-card"/>
+					</a>
+				</li>
+				<li>
+					<a id="icons" class="btn btn-default btn-lg" href="#/empPayHist" role="button">
+						<span class = "glyphicon glyphicon-tasks"/>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<ng-view id="view" />
+		<script src="libraries/angular.js"></script>
+		<script src="libraries/angular-route.js"></script>
+		<script src="modules/base-page.js"></script>
+		<script src="controllers/empPayCtrl.js"></script>
+		<script src="controllers/empGenPayCtrl.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

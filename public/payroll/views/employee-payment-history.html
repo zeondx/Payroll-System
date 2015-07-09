@@ -1,0 +1,29 @@
+<div ng-repeat="employee in employees">
+	<div class="container">
+		<div id="jumboText" class="jumbotron">
+			<div class="table-responsive">
+				<table class="table table-bordered table-condensed">
+					<thead>
+						<th>Name</th>
+						<th>Payment owed</th>
+						<th>Id</th>
+						<th>Reimbursement status</th>
+						<th>Paid</th>
+						<th>Approve/Disapprove</th>
+					</thead>
+					<tr>
+						<td>{{employee.firstName}}, {{employee.lastName}}</td>
+						<td>{{employee.compensation-employee.deductions}}</td>
+						<td>{{employee.id}}</td>
+						<td>{{employee.rForm}}</td>
+						<td>{{employee.paid}}</td>
+						<td>
+							<input type="checkbox" ng-click="check(employees[$index])" ng-model="employee.rForm" />
+						</td>
+					</tr>
+				</table>
+			</div>
+			<button id='myBtn' class="btn btn-default form-control" ng-click="submit(employees[$index])" role="button">Submit</button>
+		</div>
+	</div>
+</div>

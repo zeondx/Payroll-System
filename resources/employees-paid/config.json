@@ -1,0 +1,21 @@
+{
+	"type": "Collection",
+	"properties": {
+		"empId": {
+			"name": "empId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "empId",
+			"order": 0
+		},
+		"totalPaid": {
+			"name": "totalPaid",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "totalPaid",
+			"order": 1
+		}
+	}
+}

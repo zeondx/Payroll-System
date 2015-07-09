@@ -1,0 +1,19 @@
+<div id="searchBar" class="input-group">
+	<span class="input-group-btn">
+		<button ng-click="findUser(employee)" class="btn btn-default">
+			<span class="ti-search" />
+		</button>
+	</span>
+	<input class="form-control" type="text" placeholder="Search for employee by first or last name, and id" ng-model="employee"
+	required/>
+</div>
+<div class="container-fluid">
+	<div ng-repeat="employee in employees track by $index">
+		<div class="col-xs-12 col-md-4">
+			<div id = "jumboText" class="jumbotron" ng-click="pickThis(employee)">
+				<strong>Employee id:</strong>
+				<strong>{{employee.id}}</strong>
+			</div>
+		</div>
+	</div>
+<div>

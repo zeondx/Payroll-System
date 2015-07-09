@@ -1,0 +1,56 @@
+#myBtn:hover{
+	background-color: white;
+}
+
+#empHist{
+	margin-top: 10px;
+}
+
+
+#icons {
+	font-size : 18px;
+}
+
+body{
+	background-color: black;
+}
+
+#empForm{
+	margin-top: 10px;
+	word-wrap: break-word;
+}
+
+#myBtn{
+	margin-bottom: 5px;
+}
+
+#myBtn:hover{
+	background-color: lightgray;
+}
+
+#searchBar{
+	margin-bottom: 10px;
+}
+
+#jumboText{
+		margin-top: 10px;
+		border-radius: 40%;
+	}
+	
+#alert{
+	height: 200px;
+}
+
+#alertText{
+
+}
+
+@media(max-width:767px){
+	#jumboText{
+		font-size: 12px;
+	}
+}
+@media(min-width:768px){
+}
+@media(min-width:992px){}
+@media(min-width:1200px){}

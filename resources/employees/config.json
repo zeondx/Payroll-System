@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"firstName": {
+			"name": "firstName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "firstName",
+			"order": 0
+		},
+		"lastName": {
+			"name": "lastName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "lastName",
+			"order": 1
+		},
+		"deductions": {
+			"name": "deductions",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "deductions",
+			"order": 2
+		},
+		"compensation": {
+			"name": "compensation",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "compensation",
+			"order": 3
+		},
+		"rForm": {
+			"name": "rForm",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": true,
+			"id": "rForm",
+			"order": 4
+		},
+		"paid": {
+			"name": "paid",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": true,
+			"id": "paid",
+			"order": 5
+		}
+	}
+}
